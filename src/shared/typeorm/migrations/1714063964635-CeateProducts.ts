@@ -44,6 +44,7 @@ export class CeateProducts1714063964635 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
+      await queryRunner.dropTable('products')
     }
 
 }
